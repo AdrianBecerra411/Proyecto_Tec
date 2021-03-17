@@ -49,9 +49,9 @@ def convolution(image, kernel,padding = 0):
  
     return output
 
-kernel = np.array([[-1, -1, -1], [-1, 8, -1], [-1, -1, -1]])
+kernel = np.array([[1, 1, 1], [0, 0, 0], [2, 10, 3]])
 
-Turquia = cv2.imread("C:/Users/windw/Documents/proyecto_Tec/semena-tec-tools-vision/Scripts/Proyecto Vision/Ciudad.jpeg")
+Turquia = cv2.imread("C:/Users/windw/Documents/proyecto_Tec/semena-tec-tools-vision/Scripts/Proyecto Vision/Turquia.jpg")
 Turquia = cv2.cvtColor(src=Turquia, code = cv2.COLOR_BGR2GRAY)
 
 convolution(Turquia,kernel,padding = 2)
